@@ -50,8 +50,8 @@ public class Main {
             while (game.playing()) {
                 game.playGame();
             }
-        } catch (IllegalStateException excp) {
-            System.err.printf("Internal error: %s%n", excp.getMessage());
+        } catch (IllegalStateException exp) {
+            System.err.printf("Internal error: %s%n", exp.getMessage());
             System.exit(1);
         }
 
